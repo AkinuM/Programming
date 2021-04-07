@@ -28,9 +28,15 @@ int main()
 	}
 	int** matrix;
 	matrix = (int**)malloc(m * sizeof(int*));
+	if (matrix == NULL) {
+		return 0;
+	}
 	int i, j;
 	for (i = 0; i < m; i++) {
 		matrix[i] = (int*)malloc(n * sizeof(int));
+		if (matrix[i] == NULL) {
+		return 0;
+		}
 		for (j = 0; j < n; j++) {
 			printf("[%d][%d] = ", i, j);
 			while (!scanf("%d", &matrix[i][j])) {
