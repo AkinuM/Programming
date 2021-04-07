@@ -16,9 +16,6 @@ static int** getMatrix() {
 	return matrix;
 }
 
-//int** matrix = getMatrix();
-
-
 void testCountElement() {
 	TEST_CHECK_(countElement(getMatrix(), 1, 1, 1, 1) == 0, "countElement(matrix, 1, 1, 1, 1) == %d", 0);
 }
