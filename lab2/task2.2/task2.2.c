@@ -23,4 +23,5 @@ int main()
 		decomposition = countDecomposition(x, ++n);
 	}
 	printf("n: %d\n", n);
+	return 0;
 }
