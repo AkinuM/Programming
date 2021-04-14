@@ -59,9 +59,10 @@ int main()
 		int sum = 0;
 		for (j = 0; j < n; j++) {
 			sum += matrix[i][j];
-		}
-		if (sum != 0) {
+			if (sum != 0) {
 			rang++;
+			break;
+			}
 		}
 	}
 	printf("rang = %d\n", rang);
